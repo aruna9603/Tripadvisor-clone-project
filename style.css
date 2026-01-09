@@ -428,3 +428,9 @@ body{
         font-size: 10px;
     }    
 }
+
+@media screen and (max-width:600px) {
+    .searchbar__s2{
+        display: none;
+    }        
+}
