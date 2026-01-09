@@ -168,7 +168,8 @@ body{
     padding: 5px;
     border-radius: 10px;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 } 
 .booknow__s1{
     margin: 10px;
@@ -221,20 +222,22 @@ body{
 
 .findthings-container{
     display: flex;
-    justify-content: space-between;
-    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 .image__card{
     width: 20%;
+    flex-grow: 1;
+    flex-basis: 20%;
     position: relative;
-    margin: 10px;
 }
 
 .image__card img{
-    width: 300px;
+    width: 100%;
     height: 300px;
     border-radius: 20px;
-    gap: 10px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -263,17 +266,21 @@ body{
 
 .thanjavur-container{
     display: flex;
-    justify-content: space-between;
-    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
 }
 
 .container__card{
     width: 20%;
+    flex-grow: 1;
 }
 
 .thanjavur-container img{
     width: 100%;
-    height: 70%;
+    height: 300px;
     border-radius: 10px;
 }
 
@@ -330,25 +337,24 @@ body{
 /* iconicplaces */
 .iconicplaces{
     width: 100%;
-    margin-top: 10px;
+    margin: 20px;
 }
 
 .places-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .place__card{
     width: 20%;
     position: relative;
-    margin: 10px;
     flex-grow: 1;
-    flex-basis: 20%;
 }
 
 .place__card img{
-    width: 300px;
+    width: 100%;
     height: 300px;
     border-radius: 20px;
     cursor: pointer;
@@ -371,6 +377,7 @@ body{
     border-radius: 10px;
     background-color: #F7F7F7;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .learn__s1 img{
@@ -430,7 +437,36 @@ body{
 }
 
 @media screen and (max-width:600px) {
-    .searchbar__s2{
+    .navbar__s2{
         display: none;
     }        
+
+    .searchbar__s2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .searchbar__s3{
+        width: 100%;
+    }
+
+    .image__card{
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 35%;
+    }
+
+    .container__card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+
+    .place__card{
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 45%;
+    }
 }
