@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: #002B11;
+}
+
+.container{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* NAVBAR */
+.navbar{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: solid none 1px;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar__s1{
+    display: inline-block;
+}
+
+.navbar__s1 img,.navbar__s1 h1{
+    width: 30px;
+    height: 30px;
+    display: inline;
+    cursor: pointer;
+}
+
+.navbar__s2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.navbar__s2 p{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navbar__s2 p:hover{
+    background-color:  #E5E5E5;
+}
+
+.navbar__s3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.navbar__s3 div{
+    display: flex;
+    gap: 5px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.navbar__s3 div:hover{
+    background-color: #E5E5E5;
+}
+
+.navbar__s3 h3{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.navbar__s3 h3:hover{
+    background-color: #143C24;
+    color: white;
+}
+/* searchbar */
+.searchbar{
+    padding: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar__s1{
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.searchbar__s2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.searchbar__s2 h4:hover{
+    transition: 1s;
+    border-bottom: solid black 2px;
+}
+
+.searchbar__s3{
+    padding: 10px;
+    border: solid black none;
+    border-radius: 30px;
+    background-color: #F7F7F7;
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.searchbar__s3 input{
+    border: none;
+    width: 80%;
+    background-color: transparent;
+}
+
+.searchbar__s3 h4{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #00EB5B;
+    color: #002B11;
+    border: solid black 1px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.searchbar__s3 h4:hover{
+    background-color: #00D352;
+}
+
+/* booknow */
+.booknow{
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    background-color: #00EB5B;
+    color: #002B11;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.booknow__s1{
+    margin: 10px;
+    position: relative;
+}
+.booknow__s1 img{
+    width: 390px;
+    height: 360px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.booknow__s1 h3{
+    display: inline-block;
+    border: solid black 2px;
+    border-radius: 30px;
+    background-color: #00EB5B;
+    padding: 10px;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+}
+
+.booknow__s2{
+    padding: 30px;
+    margin: 10px;
+}
+
+.booknow__s2 h1,.booknow__s2 p,.booknow__s2 h3{
+    margin: 10px;
+}
+.booknow__s2 h1{
+    font-size: 50px;
+}
+
+.booknow__s2 h3{
+    display: inline-block;
+    background-color: #002B11;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* findthings */
+.findthings h2,.findthings p{
+    padding: 5px;
+    margin: 5px;
+}
+
+.findthings-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.image__card{
+    width: 20%;
+    flex-grow: 1;
+    flex-basis: 20%;
+    position: relative;
+}
+
+.image__card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.image__card:hover{
+    transform: translateY(5px);
+}
+
+
+.image__card h2{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+}
+
+/* thanjavur */
+.thanjavur{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.thanjavur h3{
+    font-size: 20px;
+}
+.thanjavur h3,.thanjavur p{
+    margin: 10px;
+}
+
+.thanjavur-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+}
+
+.container__card{
+    width: 20%;
+    flex-grow: 1;
+}
+
+.container__card:hover{
+    transform: translateY(5px);
+}
+
+.container__card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* donatenow */
+.donatenow{
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    padding: 10px;
+    border: solid none 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donatenow__s1 img{
+    width: 600px;
+    margin: 10px;
+}
+
+.donatenow__s2{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donatenow__s2 p,.donatenow__s2 h1{
+    padding: 20px;
+}
+
+.donatenow__s2 h1{
+    font-size: 50px;
+}
+
+.donatenow__s2 h3{
+    display: inline-block;
+    border: solid black 1px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.donatenow__s2 h3:hover{
+    background-color: #143C24;
+}
+
+/* iconicplaces */
+.iconicplaces{
+    width: 100%;
+    margin: 20px;
+}
+
+.places-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.place__card{
+    width: 20%;
+    position: relative;
+    flex-grow: 1;
+}
+
+.place__card:hover{
+    transform: translateY(5px);
+}
+
+.place__card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.place__card h2{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* learn more */
+.learn{
+    width: 80%;
+    margin: auto;
+    border: solid none 1px;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.learn__s1 img{
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.learn__s2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.learn__s2 h3{
+    display: inline-block;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.learn__s2 h3:hover{
+    background-color: #143C24;
+}
+
+/* footer */
+
+.footer{
+    padding: 30px;
+    background-color: #F7F7F7;
+    gap: 20px;
+    margin-top: 30px;
+}
+.footer__one{
+    display: flex;
+}
+.footer__one p{
+    margin: 10px;
+}
+
+.footer__two{
+    margin: 40px;
+}
+
+/* media query */
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }    
+}
+
+@media screen and (max-width:600px) {
+    .navbar__s2{
+        display: none;
+    }        
+
+    .searchbar__s2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .searchbar__s3{
+        width: 100%;
+    }
+
+    .image__card{
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 35%;
+    }
+
+    .container__card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+
+    .place__card{
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 45%;
+    }
+}
